@@ -1,0 +1,49 @@
+.hero {
+  background: url("http://www.bachelorsdegreeonline.com/wp-content/uploads/2012/04/moleskine/02-moleskine.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #b3e6ff);
+    opacity: .8; }
+  .hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .hero h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center; }
+  .hero p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .hero .tech-img {
+    background: url("http://is4.mzstatic.com/image/thumb/Purple69/v4/94/c1/31/94c1316b-834a-b4d0-9ae9-3e0ebd004ff1/source/175x175-75.png") no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; }
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: center;
+      font-size: 2.5rem; }
+    .hero p {
+      text-align: center; } }
