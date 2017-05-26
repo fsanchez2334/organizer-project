@@ -44,3 +44,51 @@ initializeClock('clockdiv', deadline);
     
 });
 
+$(document).ready(function() {
+    //alert("works");
+    $("#Submit").click(function(){
+        var searchVal= $("#search").val();
+        var part1= "https://api.giphy.com/v1/gifs/search?q=";
+        var part2="&api_key=dc6zaTOxFJmzC";
+        var url= part1 + searchVal + part2;
+        $.getJSON(url, function(response){
+            var imgURL= response.data[0].images.downsized.url;
+            var img= "<img src='" + imgURL + " '/> ";
+            $("body").append(img);
+        });
+    });
+});
+
+$(document).ready(function() {
+})
+
+//var myStringArray = ["Hello","World"];
+//var arrayLength = myStringArray.length;
+//for (var i = 0; i < arrayLength; i++) {
+  //  alert(myStringArray[i]);
+    //Do something
+//}
+
+
+//while(minutesSpan.innerHTML<50){
+  
+//$(document).ready(function() {
+    //alert("works");
+  //  $("#plus").click(function(){
+     //  var searchVal= $("#plus").val();
+       // var part1= "https://api.giphy.com/v1/gifs/search?q=";
+        //var part2="&api_key=dc6zaTOxFJmzC";
+        //var url= part1 + searchVal + part2;
+    //    $.getJSON(url, function(response){
+       //     var imgURL= response.data[90].images.downsized.url;
+         //   var img= "<img src='" + imgURL + " '/> ";
+           // $("body").append(img);
+       //}
+        //});
+    //});
+//}); 
+//$(document).ready(function() {
+    //$("#alert alert-danger").click(function(){
+        
+   // });
+//});

@@ -41,3 +41,6 @@ h1{
 .btn btn-default{
 	
 }
+.sr-only {
+	display: hidden;
+}

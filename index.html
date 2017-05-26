@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="./s-resrc.html">Student Resources<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="./riddle.html">Link</a></li>
         <li class="dropdown">
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -48,9 +48,21 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="">
-<iframe src="https://calendar.google.com/calendar/embed?title=Planner&amp;height=800&amp;wkst=1&amp;bgcolor=%2333ccff&amp;ctz=America%2FNew_York" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+
+<div class="calendar">
+<iframe src="https://calendar.google.com/calendar/embed?src=cristoreyny.org_393832313930313635%40resource.calendar.google.com&ctz=America/New_York" style="border: 0" width="1140" height="800" frameborder="0" scrolling="no"></iframe>
 </div>
+
+<button id="plus" onclick="myFunction()" type="button" class="btn btn-default" aria-label="Add event">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
+
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span>
+  Unable to add event
+</div>
+
 <div id="clockdiv">
 <img src="https://media3.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"></img>
   <div>
@@ -66,6 +78,7 @@
     <div class="smalltext">Seconds</div>
   </div>
 </div>
+        
         </div>
     </body>
 </html>
