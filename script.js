@@ -46,21 +46,26 @@ initializeClock('clockdiv', deadline);
 
 $(document).ready(function() {
     //alert("works");
-    $("#Submit").click(function(){
-        var searchVal= $("#search").val();
+    $("#clockdiv").click(function(){
         var part1= "https://api.giphy.com/v1/gifs/search?q=";
         var part2="&api_key=dc6zaTOxFJmzC";
         var url= part1 + searchVal + part2;
         $.getJSON(url, function(response){
             var imgURL= response.data[0].images.downsized.url;
             var img= "<img src='" + imgURL + " '/> ";
-            $("body").append(img);
+            $("#clockdiv").append(img);
         });
     });
 });
 
-$(document).ready(function() {
-})
+function myFunction() {
+    var x = document.getElementById("#error");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 //var myStringArray = ["Hello","World"];
 //var arrayLength = myStringArray.length;
